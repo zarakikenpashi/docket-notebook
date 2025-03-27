@@ -4,10 +4,9 @@ import { useState } from "react"
 const Sidebar = ({addNote}) => {
     const [isVisible, setIsVisible] = useState(false)
   return (
-    <nav className="w-32 border-r-1 border-[#dadce0] px-2 py-4 flex items-center flex-col gap-y-10">
+    <nav className="sticky top-0 bg-primarycolor w-full lg:w-32 border-r-1 border-[#dadce0] px-8 lg:px-2 py-4 flex items-center flex-row justify-between lg:justify-start lg:flex-col gap-y-10">
         <Logo />
         <ButtonAdd change={isVisible} handleChange={setIsVisible} addNote={addNote} />
-        <Buttons open={isVisible} />
     </nav>
   )
 }
@@ -15,7 +14,7 @@ const Sidebar = ({addNote}) => {
 const ButtonAdd = ({addNote}) => {
     return(
         <button  
-            className="bg-black size-10 rounded rounded-full text-white cursor-pointer flex items-center justify-center"
+            className="bg-black size-10 rounded-full text-white cursor-pointer flex items-center justify-center"
             onClick={addNote}
         >
             <Plus size={20} />
@@ -23,26 +22,6 @@ const ButtonAdd = ({addNote}) => {
     )
 }
 
-const Buttons = ({open}) => {
-    const colors = ["blue","purple","amber","lime","orange"]
-
-    return(
-        <div className={`flex-col gap-y-4 ${open ? 'flex' : 'hidden'}`}>
-            {
-                colors.map((color) =>(
-                    <Button color={color} key={color} />
-                ))
-            }
-            
-        </div>
-    )
-}
-
-const Button = ({color}) => {
-    return(
-        <button className={`bg-${color}-500 h-5 w-5 rounded rounded-full text-white cursor-pointer flex items-center justify-center`}></button>
-    )
-}
 
 const Logo = () => {
     return(

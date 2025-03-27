@@ -38,7 +38,7 @@ const App = () => {
   }
 
   return (
-      <div className="min-h-screen bg-primarycolor flex">
+      <div className="min-h-screen bg-primarycolor flex flex-col lg:flex-row relative">
         <Sidebar addNote={addNote} />
         <main className="w-full px-12 pt-2 pb-4">
           <Header />
