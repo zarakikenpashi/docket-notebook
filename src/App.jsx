@@ -34,7 +34,6 @@ const App = () => {
   }
   
   const deleteNote = (id) => {
-    console.log(id)
     return setNotes(notes.filter((note)=> note.id != id))
   }
 
