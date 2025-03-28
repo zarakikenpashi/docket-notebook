@@ -3,12 +3,11 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 256 319" style="enable-background:new 0 0 256 319;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FF4F00;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'Poppins-BlackItalic';}
-	.st3{font-size:322.7985px;}
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'Poppins-BlackItalic';}
+	.st2{font-size:322.7985px;}
 </style>
-<path class="st0" d="M235.6,306.4H20.4c-6,0-10.8-4.8-10.8-10.8V23.4c0-6,4.8-10.8,10.8-10.8h215.2c6,0,10.8,4.8,10.8,10.8v272.2
+<path d="M235.6,306.4H20.4c-6,0-10.8-4.8-10.8-10.8V23.4c0-6,4.8-10.8,10.8-10.8h215.2c6,0,10.8,4.8,10.8,10.8v272.2
 	C246.4,301.6,241.6,306.4,235.6,306.4z"/>
-<text transform="matrix(0.8217 0 0 1 27.8027 276.4736)" class="st1 st2 st3">D</text>
+<text transform="matrix(0.8217 0 0 1 27.8027 276.4736)" class="st0 st1 st2">D</text>
 </svg>
