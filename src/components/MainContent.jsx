@@ -1,27 +1,32 @@
 import { Pencil, Trash2 } from "lucide-react"
+import { useContext } from "react"
+import { NotesContext } from "../App"
 
-const MainContent = ({notes,deleteNote}) => {
+const MainContent = () => {
+
   return (
     <section>
         <h1 className="text-7xl font-bold text-black py-4">Notes</h1>
-        <Cards notes={notes} deleteNote={deleteNote} />
+        <Cards />
     </section>
   )
 }
 
 
-const Cards = ({notes, deleteNote}) => {
+const Cards = () => {
+    const {notes} = useContext(NotesContext)
     return(
         <div className="flex gap-4 flex-wrap">
             {notes.map((note)=>(
-                <Card note={note} deleteNote={deleteNote} key={note.id} />
+                <Card note={note}  key={note.id} />
             ))}
         </div> 
     )
 }
 
 
-const Card = ({note, deleteNote}) => {
+const Card = ({ note }) => {
+    const {deleteNote} = useContext(NotesContext)
     return(
         <div className={`size-64 rounded-lg p-4 flex flex-col justify-between border-1 border-[#dadce0] shadow`}>
             <div className="">
